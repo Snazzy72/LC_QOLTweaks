@@ -66,11 +66,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\Binds.cs" />
     <Compile Include="Patches\PlayerControllerBPatch.cs" />
     <Compile Include="Patches\TimeOfDayPatch.cs" />
     <Compile Include="Patches\RoundManagerPatch.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,7 +19,7 @@ namespace LC_QOLTweaks.Patches
                 (
                     headerText: "Current scrap in level", 
                     bodyText: $"Minimum of {currentLevel.minScrap} scrap items with a value of {currentLevel.minTotalScrapValue}. " +
-                    $"Maximum of {currentLevel.maxScrap} scrap items with a value of {currentLevel.maxTotalScrapValue}"
+                    $"Maximum of {currentLevel.maxScrap} scrap items with a value of {currentLevel.maxTotalScrapValue}."
                 );
             }
             catch (Exception exception)

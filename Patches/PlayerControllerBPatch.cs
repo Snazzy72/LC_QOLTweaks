@@ -16,13 +16,13 @@ namespace LC_QOLTweaks.Patches
         [HarmonyPostfix]
         private static void ToggleSpectatorCamera(PlayerControllerB __instance)
         {
-            if (Keyboard.current.vKey.wasPressedThisFrame && !_debounced)
+            if (Keyboard.current[Config.Binds.ToggleSpectateCamera.Value].wasPressedThisFrame && !_debounced)
             {
                 _firstPerson = !_firstPerson;
                 _debounced = true;
             }
 
-            if (Keyboard.current.vKey.wasReleasedThisFrame) _debounced = false;
+            if (Keyboard.current[Config.Binds.ToggleSpectateCamera.Value].wasReleasedThisFrame) _debounced = false;
 
             if (__instance.spectatedPlayerScript == null || !_firstPerson) return;
 

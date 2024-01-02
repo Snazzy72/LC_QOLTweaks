@@ -3,6 +3,7 @@ using BepInEx.Logging;
 using HarmonyLib;
 using System;
 using LC_QOLTweaks.Patches;
+using LC_QOLTweaks.Config;
 
 namespace LC_QOLTweaks
 {
@@ -67,6 +68,16 @@ namespace LC_QOLTweaks
         private static void InitStartup()
         {
             ManualLogSource.LogMessage(data: "Loaded LC_QOLTweaks.");
+
+            try
+            {
+                ManualLogSource.LogMessage(data: $"ToggleSpectateCamera keybinding set to: {Binds.ToggleSpectateCamera.Value}");
+                ManualLogSource.LogMessage(data: $"ToggleClockVisibility keybinding set to: {Binds.ToggleClockVisibility.Value}");
+            }
+            catch (Exception exception)
+            {
+                ManualLogSource.LogError(data: $"Keybindings not created: {exception}");
+            }
         }
 
         public static ManualLogSource GetManualLogSource() => ManualLogSource;

@@ -16,5 +16,9 @@ namespace LC_QOLTweaks.Config
         public static ConfigEntry<Key> ToggleClockVisibility = ConfigFile.Bind
         (new ConfigDefinition(section: "Keybindings", key: "ToggleClockVisibility"), defaultValue: Key.X,
             configDescription: new ConfigDescription("Toggle the clock visibility"));
+
+        public static ConfigEntry<Key> ToggleInfSprint = ConfigFile.Bind
+        (new ConfigDefinition(section: "Keybindings", key: "ToggleInfSprint"), defaultValue: Key.N,
+            configDescription: new ConfigDescription("Toggle infinite sprint"));
     }
 }

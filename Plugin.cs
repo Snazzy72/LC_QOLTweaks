@@ -73,6 +73,7 @@ namespace LC_QOLTweaks
             {
                 ManualLogSource.LogMessage(data: $"ToggleSpectateCamera keybinding set to: {Binds.ToggleSpectateCamera.Value}");
                 ManualLogSource.LogMessage(data: $"ToggleClockVisibility keybinding set to: {Binds.ToggleClockVisibility.Value}");
+                ManualLogSource.LogMessage(data: $"ToggleInfSprint keybinding set to: {Binds.ToggleInfSprint.Value}");
             }
             catch (Exception exception)
             {

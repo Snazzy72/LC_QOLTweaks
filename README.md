@@ -2,11 +2,12 @@
 
 A simple Quality of Life mod for Lethal Company, using the BepInEx framework.
 
-## It offers the following features as of release 0.0.1
+## It offers the following features as of release 1.2.1
 
-* In game clock is always visible.
+* Toggle in game clock.
 * Scrap totals for each level as you land (Displays the min and max amount of scrap items in the level and their total values)
 * Immersive spectating camera view that can be toggled with V
+* Toggle infinite sprint
 
 
 ## Installation
